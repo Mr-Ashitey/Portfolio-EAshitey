@@ -1,0 +1,383 @@
+extends ../layout.pug
+
+block main
+    //include moose css files
+    include ../includes/moose_css.pug
+    //include navBar for moose blog
+    include ../includes/blog_navBar.pug
+    section
+        .container
+            .row.no-gutters.slider-text.align-items-center.justify-content-center
+                .col-md-9.text-center.ftco-animate.pt-5
+                    h1.mb-3.bread My Blog
+                    p.breadcrumbs
+                        span.mr-2
+                            a(href='/') 
+                                | Home  
+                                i.fa.fa-chevron-right 
+                        span Blog 
+                            i.fa.fa-chevron-right
+    section.ftco-section
+        .container-fluid
+            .row
+                .col-md-6.col-lg-4.blog-wrap.blog-wrap-2.px-md-5.ftco-animate
+                    a.img.img-blog.w-100.border.d-block(href='/blog-detail', style='background-image:url(moose/images/ximage_1.jpg.pagespeed.ic.CMXGCCUdn8.jpg)')
+                    .text.text-2.py-4.p-0.ftco-animate
+                        p.meta
+                            a(href='#')
+                                span.fa.fa-calendar.mr-2 
+                                | Sept. 27, 2020 
+                            a(href='#')
+                                span.fa.fa-user.mr-2
+                                | Admin 
+                            a.meta-chat(href='#')
+                                span.fa.fa-comment.mr-2 
+                                | 3 
+                        h2.mb-4
+                            a(href='/blog-detail') Turning a digital brand into a real world experience
+                        .icon.d-flex.align-items-center
+                            .img(style='background-image:url(moose/images/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg)')
+                            .position.pl-3
+                                h4.mb-0 Jamie Jonson
+                                span CEO, Product Designer
+                .col-md-6.col-lg-4.blog-wrap.blog-wrap-2.px-md-5.ftco-animate
+                    a.img.img-blog.w-100.border.d-block(href='/blog-detail', style='background-image:url(moose/images/ximage_2.jpg.pagespeed.ic.NnUd5zBlZ1.jpg)')
+                    .text.text-2.py-4.p-0.ftco-animate
+                        p.meta
+                            a(href='#')
+                                span.fa.fa-calendar.mr-2 
+                                | Sept. 27, 2020 
+                            a(href='#')
+                                span.fa.fa-user.mr-2
+                                | Admin 
+                            a.meta-chat(href='#')
+                                span.fa.fa-comment.mr-2 
+                                | 3 
+                        h2.mb-4
+                            a(href='/blog-detail') Turning a digital brand into a real world experience
+                        .icon.d-flex.align-items-center
+                            .img(style='background-image:url(moose/images/xperson_2.jpg.pagespeed.ic.yyrmjBH91b.jpg)')
+                            .position.pl-3
+                                h4.mb-0 Jamie Jonson
+                                span CEO, Product Designer
+                .col-md-6.col-lg-4.blog-wrap.blog-wrap-2.px-md-5.ftco-animate
+                    a.img.img-blog.w-100.border.d-block(href='blog-single.html', style='background-image:url(moose/images/ximage_3.jpg.pagespeed.ic.1pq2k5jPG_.jpg)')
+                    .text.text-2.py-4.p-0.ftco-animate
+                        p.meta
+                            a(href='#')
+                                span.fa.fa-calendar.mr-2 
+                                | Sept. 27, 2020 
+                            a(href='#')
+                                span.fa.fa-user.mr-2
+                                | Admin 
+                            a.meta-chat(href='#')
+                                span.fa.fa-comment.mr-2 
+                                | 3 
+                        h2.mb-4
+                            a(href='blog-single.html') Turning a digital brand into a real world experience
+                        .icon.d-flex.align-items-center
+                            .img(style='background-image:url(moose/images/person_3.jpg)')
+                            .position.pl-3
+                                h4.mb-0 Jamie Jonson
+                                span CEO, Product Designer
+                .col-md-6.col-lg-4.blog-wrap.blog-wrap-2.px-md-5.ftco-animate
+                    a.img.img-blog.w-100.border.d-block(href='blog-single.html', style='background-image: urlmoose/(images/image_4.jpg);')
+                    .text.text-2.py-4.p-0.ftco-animate
+                        p.meta
+                            a(href='#')
+                                span.fa.fa-calendar.mr-2 
+                                | Sept. 27, 2020 
+                            a(href='#')
+                                span.fa.fa-user.mr-2
+                                | Admin 
+                            a.meta-chat(href='#')
+                                span.fa.fa-comment.mr-2 
+                                | 3 
+                        h2.mb-4
+                            a(href='blog-single.html') Turning a digital brand into a real world experience
+                        .icon.d-flex.align-items-center
+                            .img(style='background-image:url(moose/images/xperson_4.jpg.pagespeed.ic.sgz97bCjv4.jpg)')
+                            .position.pl-3
+                                h4.mb-0 Jamie Jonson
+                                span CEO, Product Designer
+                .col-md-6.col-lg-4.blog-wrap.blog-wrap-2.px-md-5.ftco-animate
+                    a.img.img-blog.w-100.border.d-block(href='blog-single.html', style='background-image:url(moose/images/ximage_5.jpg.pagespeed.ic.lXddT8kcSP.jpg)')
+                    .text.text-2.py-4.p-0.ftco-animate
+                        p.meta
+                            a(href='#')
+                                span.fa.fa-calendar.mr-2 
+                                | Sept. 27, 2020 
+                            a(href='#')
+                                span.fa.fa-user.mr-2
+                                | Admin 
+                            a.meta-chat(href='#')
+                                span.fa.fa-comment.mr-2 
+                                | 3 
+                        h2.mb-4
+                            a(href='blog-single.html') Turning a digital brand into a real world experience
+                        .icon.d-flex.align-items-center
+                            .img(style='background-image:url(moose/images/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg)')
+                            .position.pl-3
+                                h4.mb-0 Jamie Jonson
+                                span CEO, Product Designer
+                .col-md-6.col-lg-4.blog-wrap.blog-wrap-2.px-md-5.ftco-animate
+                    a.img.img-blog.w-100.border.d-block(href='blog-single.html', style='background-image:url(moose/images/ximage_6.jpg.pagespeed.ic.nDZCPYzIeF.jpg)')
+                    .text.text-2.py-4.p-0.ftco-animate
+                        p.meta
+                            a(href='#')
+                                span.fa.fa-calendar.mr-2 
+                                | Sept. 27, 2020 
+                            a(href='#')
+                                span.fa.fa-user.mr-2
+                                | Admin 
+                            a.meta-chat(href='#')
+                                span.fa.fa-comment.mr-2 
+                                | 3 
+                        h2.mb-4
+                            a(href='blog-single.html') Turning a digital brand into a real world experience
+                        .icon.d-flex.align-items-center
+                            .img(style='background-image:url(moose/images/xperson_2.jpg.pagespeed.ic.yyrmjBH91b.jpg)')
+                            .position.pl-3
+                                h4.mb-0 Jamie Jonson
+                                span CEO, Product Designer
+                .col-md-6.col-lg-4.blog-wrap.blog-wrap-2.px-md-5.ftco-animate
+                    a.img.img-blog.w-100.border.d-block(href='blog-single.html', style='background-image:url(moose/images/ximage_7.jpg.pagespeed.ic.dmu7v0JZAy.jpg)')
+                    .text.text-2.py-4.p-0.ftco-animate
+                        p.meta
+                            a(href='#')
+                                span.fa.fa-calendar.mr-2 
+                                | Sept. 27, 2020 
+                            a(href='#')
+                                span.fa.fa-user.mr-2
+                                | Admin 
+                            a.meta-chat(href='#')
+                                span.fa.fa-comment.mr-2 
+                                | 3 
+                        h2.mb-4
+                            a(href='blog-single.html') Turning a digital brand into a real world experience
+                        .icon.d-flex.align-items-center
+                            .img(style='background-image:url(moose/images/person_3.jpg)')
+                            .position.pl-3
+                                h4.mb-0 Jamie Jonson
+                                span CEO, Product Designer
+                .col-md-6.col-lg-4.blog-wrap.blog-wrap-2.px-md-5.ftco-animate
+                    a.img.img-blog.w-100.border.d-block(href='blog-single.html', style='background-image:url(moose/images/ximage_8.jpg.pagespeed.ic.mwHTjd306l.jpg)')
+                    .text.text-2.py-4.p-0.ftco-animate
+                        p.meta
+                            a(href='#')
+                                span.fa.fa-calendar.mr-2 
+                                | Sept. 27, 2020 
+                            a(href='#')
+                                span.fa.fa-user.mr-2
+                                | Admin 
+                            a.meta-chat(href='#')
+                                span.fa.fa-comment.mr-2 
+                                | 3 
+                        h2.mb-4
+                            a(href='blog-single.html') Turning a digital brand into a real world experience
+                        .icon.d-flex.align-items-center
+                            .img(style='background-image:url(moose/images/person_3.jpg)')
+                            .position.pl-3
+                                h4.mb-0 Jamie Jonson
+                                span CEO, Product Designer
+                .col-md-6.col-lg-4.blog-wrap.blog-wrap-2.px-md-5.ftco-animate
+                    a.img.img-blog.w-100.border.d-block(href='blog-single.html', style='background-image: url(moose/images/image_9.jpg);')
+                    .text.text-2.py-4.p-0.ftco-animate
+                        p.meta
+                            a(href='#')
+                                span.fa.fa-calendar.mr-2 
+                                | Sept. 27, 2020 
+                            a(href='#')
+                                span.fa.fa-user.mr-2
+                                | Admin 
+                            a.meta-chat(href='#')
+                                span.fa.fa-comment.mr-2 
+                                | 3 
+                        h2.mb-4
+                            a(href='blog-single.html') Turning a digital brand into a real world experience
+                        .icon.d-flex.align-items-center
+                            .img(style='background-image:url(moose/images/person_3.jpg)')
+                            .position.pl-3
+                                h4.mb-0 Jamie Jonson
+                                span CEO, Product Designer
+                .col-md-6.col-lg-4.blog-wrap.blog-wrap-2.px-md-5.ftco-animate
+                    a.img.img-blog.w-100.border.d-block(href='blog-single.html', style='background-image: url(moose/images/image_10.jpg);')
+                    .text.text-2.py-4.p-0.ftco-animate
+                        p.meta
+                            a(href='#')
+                                span.fa.fa-calendar.mr-2 
+                                | Sept. 27, 2020 
+                            a(href='#')
+                                span.fa.fa-user.mr-2
+                                | Admin 
+                            a.meta-chat(href='#')
+                                span.fa.fa-comment.mr-2 
+                                | 3 
+                        h2.mb-4
+                            a(href='blog-single.html') Turning a digital brand into a real world experience
+                        .icon.d-flex.align-items-center
+                            .img(style='background-image:url(moose/images/person_3.jpg)')
+                            .position.pl-3
+                                h4.mb-0 Jamie Jonson
+                                span CEO, Product Designer
+                .col-md-6.col-lg-4.blog-wrap.blog-wrap-2.px-md-5.ftco-animate
+                    a.img.img-blog.w-100.border.d-block(href='blog-single.html', style='background-image: url(moose/images/image_11.jpg);')
+                    .text.text-2.py-4.p-0.ftco-animate
+                        p.meta
+                            a(href='#')
+                                span.fa.fa-calendar.mr-2 
+                                | Sept. 27, 2020 
+                            a(href='#')
+                                span.fa.fa-user.mr-2
+                                | Admin 
+                            a.meta-chat(href='#')
+                                span.fa.fa-comment.mr-2 
+                                | 3 
+                        h2.mb-4
+                            a(href='blog-single.html') Turning a digital brand into a real world experience
+                        .icon.d-flex.align-items-center
+                            .img(style='background-image:url(moose/images/person_3.jpg)')
+                            .position.pl-3
+                                h4.mb-0 Jamie Jonson
+                                span CEO, Product Designer
+                .col-md-6.col-lg-4.blog-wrap.blog-wrap-2.px-md-5.ftco-animate
+                    a.img.img-blog.w-100.border.d-block(href='blog-single.html', style='background-image: url(moose/images/image_12.jpg);')
+                    .text.text-2.py-4.p-0.ftco-animate
+                        p.meta
+                            a(href='#')
+                                span.fa.fa-calendar.mr-2 
+                                | Sept. 27, 2020 
+                            a(href='#')
+                                span.fa.fa-user.mr-2
+                                | Admin 
+                            a.meta-chat(href='#')
+                                span.fa.fa-comment.mr-2 
+                                | 3 
+                        h2.mb-4
+                            a(href='blog-single.html') Turning a digital brand into a real world experience
+                        .icon.d-flex.align-items-center
+                            .img(style='background-image:url(moose/images/person_3.jpg)')
+                            .position.pl-3
+                                h4.mb-0 Jamie Jonson
+                                span CEO, Product Designer
+            .row.mt-5
+                .col.text-center
+                    .block-27
+                        ul
+                            li
+                                a(href='#') &lt;
+                            li.active
+                                span 1
+                            li
+                                a(href='#') 2
+                            li
+                                a(href='#') 3
+                            li
+                                a(href='#') 4
+                            li
+                                a(href='#') 5
+                            li
+                                a(href='#') &gt;
+    //- section.ftco-intro.ftco-section.bg-light
+    //-     .container
+    //-         .row.justify-content-center
+    //-             .col-md-12.text-center
+    //-                 h2 Subscribe to our Newsletter
+    //-                 .row.justify-content-center
+    //-                     .col-md-5
+    //-                         form.subscribe-form(action='#')
+    //-                             .form-group.d-flex
+    //-                                 input.form-control(type='text', placeholder='Enter email address')
+    //-                                 input.submit.px-3(type='submit', value='Subscribe')
+    footer.ftco-footer
+        .container
+            .row.mb-5.justify-content-between
+                .col-sm-12.col-md-4
+                    .ftco-footer-widget.mb-4
+                        h2.ftco-heading-2.logo
+                            a(href='#') Emmanuel Ashitey
+                        p Far far away, behind the word mountains, far from the countries.
+                        ul.ftco-footer-social.list-unstyled.mt-2
+                            li.ftco-animate
+                                a(href='#')
+                                    span.fa.fa-twitter
+                            li.ftco-animate
+                                a(href='#')
+                                    span.fa.fa-facebook
+                            li.ftco-animate
+                                a(href='#')
+                                    span.fa.fa-instagram
+                .col-sm-12.col-md-2
+                    .ftco-footer-widget.mb-4.ml-md-4
+                        h2.ftco-heading-2 Info
+                        ul.list-unstyled
+                            li
+                                a(href='/')
+                                    span.fa.fa-chevron-right.mr-2 
+                                    | Home
+                .col-sm-12.col-md-4
+                    .ftco-footer-widget.mb-4
+                        h2.ftco-heading-2 Have a Questions?
+                        .block-23.mb-3
+                            ul
+                                li
+                                    span.icon.fa.fa-map.marker
+                                    span.text 203 Fake St. Mountain View, San Francisco, California, USA
+                                li
+                                    a(href='#')
+                                        span.icon.fa.fa-phone
+                                        span.text +2 392 3929 210
+                                li
+                                    a(href='#')
+                                        span.icon.fa.fa-paper-plane.pr-4
+                                        span.text
+                                            span.__cf_email__(data-cfemail='8ae3e4ece5caf3e5fff8eee5e7ebe3e4a4e9e5e7') [email&nbsp;protected]
+        .container-fluid.px-0.py-5.bg-black
+            .container
+                .row
+                    .col-md-12
+                        p.mb-0(style='color: rgba(255,255,255,.5);')
+                            script(data-cfasync='false', src='https://preview.colorlib.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js')
+                            span.copyright &copy;     EAshitey               
+                                script.
+                                    var CurrentYear = new Date().getFullYear()
+                                    document.write(CurrentYear)
+                            //- i.fa.fa-heart.color-danger(aria-hidden='true')
+                            //- a(href='https://colorlib.com/', target='_blank', rel='nofollow noopener') Colorlib
+    script(src='moose/js/jquery.min.js')
+    script(src='moose/js/jquery-migrate-3.0.1.min.js%2bpopper.min.js%2bbootstrap.min.js.pagespeed.jc.U78p8H34ng.js')
+    script.
+        eval(mod_pagespeed_bbEt9XEkjy);
+    script.
+        eval(mod_pagespeed_ttrwegP7ZL);
+    script.
+        eval(mod_pagespeed_dkOdosBF4_);
+    script(src='moose/js/jquery.easing.1.3.js%2bjquery.waypoints.min.js%2bjquery.stellar.min.js%2bowl.carousel.min.js.pagespeed.jc.qD8QtIJ2Xe.js')
+    script.
+        eval(mod_pagespeed_JbqErEkNzA);
+    script.
+        eval(mod_pagespeed_hrCK0XETWi);
+    script.
+        eval(mod_pagespeed_zbSqfmeBAp);
+    script.
+        eval(mod_pagespeed_vhLrnV2Szq);
+    script(src='moose/js/jquery.magnific-popup.min.js%2bjquery.animateNumber.min.js%2bscrollax.min.js%2bgoogle-map.js%2bmain.js.pagespeed.jc.YwE2lpoKin.js')
+    script.
+        eval(mod_pagespeed_sL0dc5He5G);
+    script.
+        eval(mod_pagespeed_br5mytq7Hs);
+    script.
+        eval(mod_pagespeed_ZEsMLJdFnw);
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
+    script.
+        eval(mod_pagespeed_JFnw5wWI97);
+    script.
+        eval(mod_pagespeed_9Pnu0vOTRJ);
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-23581568-13')
+    script.
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-23581568-13');
+    script(defer='', src='https://static.cloudflareinsights.com/beacon.min.js', data-cf-beacon='{"rayId":"6a221681d3540676","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}')
+    script(defer='', src='https://static.cloudflareinsights.com/beacon.min.js', data-cf-beacon='{"rayId":"6a221681ceb70676","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}')
+    // Mirrored from preview.colorlib.com/theme/moose/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Oct 2021 10:37:30 GMT

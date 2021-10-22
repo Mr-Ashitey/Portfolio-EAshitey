@@ -1,0 +1,48 @@
+// mobile header
+header.mobile-header-2
+    .container
+        // menu icon
+        .menu-icon.d-inline-flex.mr-4
+            button
+                span
+        // logo image
+        .site-logo
+            a(href='index-2-dark.html')
+                img(src='images/logo.svg', alt='Bolby')
+// desktop header
+header.desktop-header-2.d-flex.align-items-start.flex-column
+    // logo image
+    .site-logo
+        a(href='index-2-dark.html')
+            img(src='images/logo-b-light.svg', alt='Bolby')
+    // main menu
+    nav
+        ul.vertical-menu.scrollspy
+            li.active
+                a(href='#home')
+                    i.icon-home
+            li
+                a(href='#about')
+                    i.icon-user-following
+            li
+                a(href='#services')
+                    i.icon-briefcase
+            li
+                a(href='#experience')
+                    i.icon-graduation
+            li
+                a(href='#works')
+                    i.icon-layers
+            li
+                a(href='#blog')
+                    i.icon-note
+            li
+                a(href='#contact')
+                    i.icon-bubbles
+    // site footer
+    .footer
+        // copyright text
+        span.copyright &copy;     EAshitey               
+            script.
+                var CurrentYear = new Date().getFullYear()
+                document.write(CurrentYear)

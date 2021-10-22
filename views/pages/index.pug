@@ -1,0 +1,588 @@
+extends ../layout.pug
+
+block main
+    //include the main css files
+    include ../includes/main_css.pug
+    //include the navigation bar
+    include ../includes/navBar.pug
+    // main layout
+    main.content-2
+        // section home
+        section#home.home.d-flex.align-items-center
+            .container
+                // intro
+                .intro
+                    // avatar image
+                    img.mb-4(src='images/avatar-1.svg', alt='Bolby')
+                    // info
+                    h1.mb-2.mt-0 Emmanuel Ashitey
+                    span
+                        span.text-rotating Mobile Applications Developer, Backend developer, API Developer
+                    // social icons
+                    ul.social-icons.light.list-inline.mb-0.mt-4
+                        li.list-inline-item
+                            a(href='https://gh.linkedin.com/in/emmanuel-ashitey-310888158')
+                                i.fab.fa-linkedin
+                        li.list-inline-item
+                            a(href='https://twitter.com/emmanuelashit18')
+                                i.fab.fa-twitter
+                        li.list-inline-item
+                            a(href='https://www.youtube.com/channel/UCyvXBMcpZTyBKwS75N04EPA')
+                                i.fab.fa-youtube
+                        li.list-inline-item
+                            a(href='https://play.google.com/store/apps/developer?id=TechDev+Gh')
+                                i.fab.fa-google-play
+                        li.list-inline-item
+                            a(href='https://stackoverflow.com/users/15982132/emmanuel-ashitey')
+                                i.fab.fa-stack-overflow
+                    // buttons
+                    .mt-4
+                        a.btn.btn-default(href='#contact') Hire me
+                // scroll down mouse wheel
+                .scroll-down
+                    a.mouse-wrapper(href='#about')
+                        span Scroll Down
+                        span.mouse
+                            span.wheel
+                // parallax layers
+                .parallax(data-relative-input='true')
+                    svg.layer.p1(width='27', height='29', data-depth='0.3', xmlns='http://www.w3.org/2000/svg')
+                        path(d='M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z', fill='#FFD15C', fill-rule='evenodd')
+                    svg.layer.p2(width='26', height='26', data-depth='0.2', xmlns='http://www.w3.org/2000/svg')
+                        path(d='M13 3.3541L2.42705 24.5h21.1459L13 3.3541z', stroke='#FF4C60', stroke-width='3', fill='none', fill-rule='evenodd')
+                    svg.layer.p3(width='30', height='25', data-depth='0.3', xmlns='http://www.w3.org/2000/svg')
+                        path(d='M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z', fill='#44D7B6', fill-rule='evenodd')
+                    svg.layer.p4(width='15', height='23', data-depth='0.6', xmlns='http://www.w3.org/2000/svg')
+                        rect(transform='rotate(30 9.86603 10.13397)', x='7', width='3', height='25', rx='1.5', fill='#FFD15C', fill-rule='evenodd')
+                    svg.layer.p5(width='15', height='23', data-depth='0.2', xmlns='http://www.w3.org/2000/svg')
+                        rect(transform='rotate(30 9.86603 10.13397)', x='7', width='3', height='25', rx='1.5', fill='#6C6CE5', fill-rule='evenodd')
+                    svg.layer.p6(width='49', height='17', data-depth='0.5', xmlns='http://www.w3.org/2000/svg')
+                        g(fill='#FF4C60', fill-rule='evenodd')
+                            path(d='M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z')
+                            path(d='M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z')
+                    svg.layer.p7(width='26', height='26', data-depth='0.4', xmlns='http://www.w3.org/2000/svg')
+                        path(d='M13 22.6459L2.42705 1.5h21.1459L13 22.6459z', stroke='#FFD15C', stroke-width='3', fill='none', fill-rule='evenodd')
+                    svg.layer.p8(width='19', height='21', data-depth='0.3', xmlns='http://www.w3.org/2000/svg')
+                        rect(transform='rotate(-40 6.25252 10.12626)', x='7', width='3', height='25', rx='1.5', fill='#6C6CE5', fill-rule='evenodd')
+                    svg.layer.p9(width='30', height='25', data-depth='0.3', data-depth-y='-1.30', xmlns='http://www.w3.org/2000/svg')
+                        path(d='M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z', fill='#6C6CE5', fill-rule='evenodd')
+                    svg.layer.p10(width='47', height='29', data-depth='0.2', xmlns='http://www.w3.org/2000/svg')
+                        g(fill='#44D7B6', fill-rule='evenodd')
+                            path(d='M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z')
+                            path(d='M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z')
+                    svg.layer.p11(width='33', height='20', data-depth='0.5', xmlns='http://www.w3.org/2000/svg')
+                        path(d='M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z', fill='#FFD15C', fill-rule='evenodd')
+        // section about
+        section#about
+            .container
+                // section title
+                h2.section-title.wow.fadeInUp About Me
+                .spacer(data-height='60')
+                .row
+                    .col-md-3
+                        .text-center.text-md-left
+                            // avatar image
+                            img(src='images/avatar-2.svg', alt='Bolby')
+                        .spacer.d-md-none.d-lg-none(data-height='30')
+                    .col-md-9.triangle-left-md.triangle-top-sm
+                        .rounded.bg-white.shadow-dark.padding-30
+                            .row
+                                .col-md-6
+                                    // about text
+                                    p I am Emmanuel Ashitey, mobile applications and backend/api developer from Accra, Ghana. I have rich experience in mobile applications development and api design and development, also I am a music enthusiast.
+                                    .mt-3
+                                        a.btn.btn-default(href='#') Download CV
+                                    .spacer.d-md-none.d-lg-none(data-height='30')
+                                .col-md-6
+                                    // skill item
+                                    .skill-item
+                                        .skill-info.clearfix
+                                            h4.float-left.mb-3.mt-0 Mobile Applications Development
+                                            span.float-right 85%
+                                        .progress
+                                            .progress-bar.data-background(role='progressbar', aria-valuemin='0', aria-valuemax='100', aria-valuenow='85', data-color='#FF4C60')
+                                        .spacer(data-height='20')
+                                    // skill item
+                                    .skill-item
+                                        .skill-info.clearfix
+                                            h4.float-left.mb-3.mt-0 Backend / API Development
+                                            span.float-right 75%
+                                        .progress
+                                            .progress-bar.data-background(role='progressbar', aria-valuemin='0', aria-valuemax='100', aria-valuenow='75', data-color='#FFD15C')
+                                        .spacer(data-height='20')
+                                    // skill item
+                                    .skill-item
+                                        .skill-info.clearfix
+                                            h4.float-left.mb-3.mt-0 LiveStreaming
+                                            span.float-right 50%
+                                        .progress
+                                            .progress-bar.data-background(role='progressbar', aria-valuemin='0', aria-valuemax='100', aria-valuenow='50', data-color='#1AD024')
+                // row end
+                .spacer(data-height='70')
+                .row
+                    .col-md-3.col-sm-6
+                        // fact item
+                        .fact-item
+                            span.icon.icon-fire
+                            .details
+                                h3.mb-0.mt-0.number
+                                    em.count 198
+                                p.mb-0 Projects completed
+                        .spacer.d-md-none.d-lg-none(data-height='30')
+                    .col-md-3.col-sm-6
+                        // fact item
+                        .fact-item
+                            span.icon.icon-cup
+                            .details
+                                h3.mb-0.mt-0.number
+                                    em.count 5670
+                                p.mb-0 Cup of coffee
+                        .spacer.d-md-none.d-lg-none(data-height='30')
+                    .col-md-3.col-sm-6
+                        // fact item
+                        .fact-item
+                            span.icon.icon-people
+                            .details
+                                h3.mb-0.mt-0.number
+                                    em.count 427
+                                p.mb-0 Satisfied clients
+                        .spacer.d-md-none.d-lg-none(data-height='30')
+                    .col-md-3.col-sm-6
+                        // fact item
+                        .fact-item
+                            span.icon.icon-badge
+                            .details
+                                h3.mb-0.mt-0.number
+                                    em.count 35
+                                p.mb-0 Nominees winner
+        // section services
+        section#services
+            .container
+                // section title
+                h2.section-title.wow.fadeInUp Services
+                .spacer(data-height='60')
+                .row
+                    .col-md-4
+                        // service box
+                        .service-box.rounded.data-background.padding-30.text-center.text-light.shadow-blue(data-color='#FF4C60')
+                            img(src='images/service-1.svg', alt='UI/UX design')
+                            h3.mb-3.mt-0 Mobile Applications Development
+                            p.mb-0 I can build fully fledged mobile applications that can run on both android and ios platforms.
+                        .spacer.d-md-none.d-lg-none(data-height='30')
+                    .col-md-4
+                        // service box
+                        .service-box.rounded.data-background.padding-30.text-center.shadow-yellow(data-color='#F9D74C')
+                            img(src='images/service-2.svg', alt='UI/UX design')
+                            h3.mb-3.mt-0 Backend / API Development
+                            p.mb-0 I can build backend systems as well as design and develop API's for web services.
+                        .spacer.d-md-none.d-lg-none(data-height='30')
+                    .col-md-4
+                        // service box
+                        .service-box.rounded.data-background.padding-30.text-center.text-light.shadow-pink(data-color='#1AD024')
+                            img(src='images/service-3.svg', alt='UI/UX design')
+                            h3.mb-3.mt-0 LiveStreaming
+                            p.mb-0 I can set-up a streaming system and stream videos to both facebook and youtube.
+                .mt-5.text-center
+                    p.mb-0 Looking for a custom job? 
+                        a(href='#contact') Click here 
+                        | to contact me! 👋
+        // section experience
+        section#experience
+            .container
+                // section title
+                h2.section-title.wow.fadeInUp Experience
+                .spacer(data-height='60')
+                .row
+                    .col-md-6
+                        // timeline wrapper
+                        .timeline.edu.bg-white.rounded.shadow-dark.padding-30.overflow-hidden
+                            // timeline item
+                            .timeline-container.wow.fadeInUp
+                                .content
+                                    span.time 2021
+                                    h3.title Coursera
+                                    p IT Project Management
+                            // timeline item
+                            .timeline-container.wow.fadeInUp(data-wow-delay='0.2s')
+                                .content
+                                    span.time 2021
+                                    h3.title Coursera
+                                    p Introduction to Cybersecurity For Business
+                            // timeline item
+                            .timeline-container.wow.fadeInUp(data-wow-delay='0.4s')
+                                .content
+                                    span.time 2021
+                                    h3.title Coursera 
+                                    p Technical Support Fundamentals
+                            // timeline item
+                            .timeline-container.wow.fadeInUp(data-wow-delay='0.6s')
+                                .content
+                                    span.time 2017 - Present
+                                    h3.title Bachelor's Degree
+                                    p Bachelor of Science Degree in Information Technology. Interests in programming, networking and cybersecurity.
+                            // timeline item
+                            .timeline-container.wow.fadeInUp(data-wow-delay='0.8s')
+                                .content
+                                    span.time 2019
+                                    h3.title IBM Africa Skills Academy
+                                    p Security Intelligence Engineer Mastery Award from IBM.
+                            // timeline item
+                            .timeline-container.wow.fadeInUp(data-wow-delay='1.0s')
+                                .content
+                                    span.time 2018
+                                    h3.title Google Digital Skills For Africa
+                                    p Certificate on the Fundamentals of Digital Marketing.
+                            // main line
+                            span.line
+                    .col-md-6
+                        // responsive spacer
+                        .spacer.d-md-none.d-lg-none(data-height='30')
+                        // timeline wrapper
+                        .timeline.exp.bg-white.rounded.shadow-dark.padding-30.overflow-hidden
+                            // timeline item
+                            .timeline-container.wow.fadeInUp
+                                .content
+                                    span.time 2020 - Present
+                                    h3.title Content Creator
+                                    p I have a Youtube Channel (TechDev GH) where I search for mobile application UI's online and write code to implement them. The channel is not limited to this, as I strive to make videos on technological trends as well as make videos on how to built backend systems and APIs using node/express javascript.
+                            // timeline item
+                            .timeline-container.wow.fadeInUp(data-wow-delay='0.2s')
+                                .content
+                                    span.time 2019
+                                    h3.title Intern
+                                    p I interned with Media General Ghana where I managed 3sports using a Content Management System (CMS) by ensuring that the website was up to date and running at all times (WordPress). I was responsible for feeding the website (3sports) with contents during the 2019 AFCON competition. I developed an HR Management System (web application) to enable individuals to apply for job opportunities as well as internships at the organization (using node and express.js for backend, pug template engine for frontend, and MongoDB for the database). I also developed a web application that enables users to sign in and out of work using the same frameworks as above. The aim was to help eliminate the manual process of signing in and out employees.
+                            // timeline item
+                            .timeline-container.wow.fadeInUp(data-wow-delay='0.4s')
+                                .content
+                                    span.time Intern
+                                    h3.title Intern
+                                    p I interned with Perfect Business Services Limited where we provided IT solutions such as assisting in all Windows and Linux OS installations, setting up and installation of computers and other devices as well as working with highly skilled technical staff to deploy computer systems and render services to clients. 
+                            // main line
+                            span.line
+        // section works
+        section#works
+            .container
+                // section title
+                h2.section-title.wow.fadeInUp Recent works
+                .spacer(data-height='60')
+                // portfolio filter (desktop)
+                ul.portfolio-filter.list-inline.wow.fadeInUp
+                    li.current.list-inline-item(data-filter='*') Everything
+                    li.list-inline-item(data-filter='.creative') Creative
+                    li.list-inline-item(data-filter='.art') Art
+                    li.list-inline-item(data-filter='.design') Design
+                    li.list-inline-item(data-filter='.branding') Branding
+                // portfolio filter (mobile)
+                .pf-filter-wrapper
+                    select.portfolio-filter-mobile
+                        option(value='*') Everything
+                        option(value='.creative') Creative
+                        option(value='.art') Art
+                        option(value='.design') Design
+                        option(value='.branding') Branding
+                // portolio wrapper
+                .row.portfolio-wrapper
+                    // portfolio item
+                    .col-md-4.col-sm-6.grid-item.art
+                        a.work-image(href='images/works/1.svg')
+                            .portfolio-item.rounded.shadow-dark
+                                .details
+                                    span.term Art
+                                    h4.title Project Managment Illustration
+                                    span.more-button
+                                        i.icon-magnifier-add
+                                .thumb
+                                    img(src='images/works/1.svg', alt='Portfolio-title')
+                                    .mask
+                    // portfolio item
+                    .col-md-4.col-sm-6.grid-item.creative.design
+                        a.work-content(href='#small-dialog')
+                            .portfolio-item.rounded.shadow-dark
+                                .details
+                                    span.term Creative
+                                    h4.title Guest App Walkthrough Screens
+                                    span.more-button
+                                        i.icon-options
+                                .thumb
+                                    img(src='images/works/2.svg', alt='Portfolio-title')
+                                    .mask
+                        #small-dialog.white-popup.zoom-anim-dialog.mfp-hide
+                            img(src='images/single-work.svg', alt='Title')
+                            h2 Guest App Walkthrough Screens
+                            p
+                            p
+                            a.btn.btn-default(href='#') View on Dribbble
+                    // portfolio item
+                    .col-md-4.col-sm-6.grid-item.branding
+                        a.work-video(href='https://www.youtube.com/watch?v=qf9z4ulfmYw')
+                            .portfolio-item.rounded.shadow-dark
+                                .details
+                                    span.term Branding
+                                    h4.title Delivery App Wireframe
+                                    span.more-button
+                                        i.icon-camrecorder
+                                .thumb
+                                    img(src='images/works/3.svg', alt='Portfolio-title')
+                                    .mask
+                    // portfolio item
+                    .col-md-4.col-sm-6.grid-item.creative
+                        a.work-video(href='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240233494&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true')
+                            .portfolio-item.rounded.shadow-dark
+                                .details
+                                    span.term Creative
+                                    h4.title Onboarding Motivation
+                                    span.more-button
+                                        i.icon-music-tone-alt
+                                .thumb
+                                    img(src='images/works/4.svg', alt='Portfolio-title')
+                                    .mask
+                    // portfolio item
+                    .col-md-4.col-sm-6.grid-item.art.branding
+                        a.gallery-link(href='#gallery-1')
+                            .portfolio-item.rounded.shadow-dark
+                                .details
+                                    span.term Art, Branding
+                                    h4.title iMac Mockup Design
+                                    span.more-button
+                                        i.icon-picture
+                                .thumb
+                                    img(src='images/works/5.svg', alt='Portfolio-title')
+                                    .mask
+                        #gallery-1.gallery.mfp-hide
+                            a(href='images/works/5.svg')
+                            a(href='images/works/4.svg')
+                    // portfolio item
+                    .col-md-4.col-sm-6.grid-item.creative.design
+                        a(href='https://themeforest.net/user/pxlsolutions/portfolio', target='_blank')
+                            .portfolio-item.rounded.shadow-dark
+                                .details
+                                    span.term Creative, Design
+                                    h4.title Game Store App Concept
+                                    span.more-button
+                                        i.icon-link
+                                .thumb
+                                    img(src='images/works/6.svg', alt='Portfolio-title')
+                                    .mask
+                // more button
+                .load-more.text-center.mt-4
+                    a.btn.btn-default(href='javascript:')
+                        i.fas.fa-spinner 
+                        | Load more
+                    // numbered pagination (hidden for infinite scroll)
+                    ul.portfolio-pagination.list-inline.d-none
+                        li.list-inline-item 1
+                        li.list-inline-item
+                            a(href='works-2.html') 2
+        // section prices
+        section#prices
+            .container
+                // section title
+                h2.section-title.wow.fadeIn Pricing Plans
+                .spacer(data-height='60')
+                .col-md-12.triangle-left-md.triangle-top-sm
+                        .rounded.bg-white.shadow-dark.padding-30
+                            .row
+                                .col-md-12
+                                    // about text
+                                    p Pricing of projects are highly dependent on the complexity of the projects. Other factors such as the time frame i.e. development time, may also affect pricing of projects. Hence, contact me so we can talk more.
+                                    .mt-3.text-center
+                                        a.btn.btn-default(href='#contact') Contact Me
+                                    .spacer.d-md-none.d-lg-none(data-height='30')
+                //- .row
+                //-     .col-md-4.pr-md-0.mt-md-4.mt-0
+                //-         // price item
+                //-         .price-item.bg-white.rounded.shadow-dark.text-center
+                //-             img(src='images/price-1.svg', alt='Regular')
+                //-             h2.plan Basic
+                //-             p A Simple option but powerful to manage your business
+                //-             p Email support
+                //-             h3.price
+                //-                 em $
+                //-                 span Month
+                //-             a.btn.btn-default(href='#') Get Started
+                //-     .col-md-4.px-md-0.my-4.my-md-0
+                //-         // price item recommended
+                //-         .price-item.bg-white.rounded.shadow-dark.text-center.best
+                //-             span.badge Recommended
+                //-             img(src='images/price-2.svg', alt='Premium')
+                //-             h2.plan Premium
+                //-             p Unlimited product including apps integrations and more features
+                //-             p Mon-Fri support
+                //-             h3.price
+                //-                 em $
+                //-                 span Month
+                //-             a.btn.btn-default(href='#') Get Started
+                //-     .col-md-4.pl-md-0.mt-md-4.mt-0
+                //-         // price item
+                //-         .price-item.bg-white.rounded.shadow-dark.text-center
+                //-             img(src='images/price-3.svg', alt='Ultimate')
+                //-             h2.plan Ultimate
+                //-             p A wise option for large companies and individuals
+                //-             p 24/7 support
+                //-             h3.price
+                //-                 em $
+                //-                 span Month
+                //-             a.btn.btn-default(href='#') Get Started
+        // section testimonials
+        section#testimonials
+            .container
+                // section title
+                h2.section-title.wow.fadeInUp Clients &amp; Reviews
+                .spacer(data-height='60')
+                // testimonials wrapper
+                .testimonials-wrapper
+                    // testimonial item
+                    .testimonial-item.text-center.mx-auto
+                        .thumb.mb-3.mx-auto
+                            img(src='images/avatar-3.svg', alt='customer-name')
+                        h4.mt-3.mb-0 John Doe
+                        span.subtitle Product designer at Dribbble
+                        .bg-white.padding-30.shadow-dark.rounded.triangle-top.position-relative.mt-4
+                            p.mb-0 I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍
+                    // testimonial item
+                    .testimonial-item.text-center.mx-auto
+                        .thumb.mb-3.mx-auto
+                            img(src='images/avatar-1.svg', alt='customer-name')
+                        h4.mt-3.mb-0 John Doe
+                        span.subtitle Product designer at Dribbble
+                        .bg-white.padding-30.shadow-dark.rounded.triangle-top.position-relative.mt-4
+                            p.mb-0  I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍
+                .row
+                    .col-md-3.col-6
+                        // client item
+                        .client-item
+                            .inner
+                                img(src='images/client-1-light.svg', alt='client-name')
+                    .col-md-3.col-6
+                        // client item
+                        .client-item
+                            .inner
+                                img(src='images/client-3-light.svg', alt='client-name')
+                    .col-md-3.col-6
+                        // client item
+                        .client-item
+                            .inner
+                                img(src='images/client-3-light.svg', alt='client-name')
+                    .col-md-3.col-6
+                        // client item
+                        .client-item
+                            .inner
+                                img(src='images/client-1-light.svg', alt='client-name')
+                    .col-md-3.col-6
+                        // client item
+                        .client-item
+                            .inner
+                                img(src='images/client-1-light.svg', alt='client-name')
+                    .col-md-3.col-6
+                        // client item
+                        .client-item
+                            .inner
+                                img(src='images/client-3-light.svg', alt='client-name')
+                    .col-md-3.col-6
+                        // client item
+                        .client-item
+                            .inner
+                                img(src='images/client-3-light.svg', alt='client-name')
+                    .col-md-3.col-6
+                        // client item
+                        .client-item
+                            .inner
+                                img(src='images/client-1-light.svg', alt='client-name')
+        // section blog
+        section#blog
+            .container
+                // section title
+                h2.section-title.wow.fadeInUp Latest Posts
+                .spacer(data-height='60')
+                .row.blog-wrapper
+                    .col-md-4
+                        // blog item
+                        .blog-item.rounded.bg-white.shadow-dark.wow.fadeIn
+                            .thumb
+                                a(href='#')
+                                    span.category Reviews
+                                a(href='#')
+                                    img(src='images/blog/1.svg', alt='blog-title')
+                            .details
+                                h4.my-0.title
+                                    a(href='#') 5 Best App Development Tool for Your Project
+                                ul.list-inline.meta.mb-0.mt-2
+                                    li.list-inline-item 09 February, 2020
+                                    li.list-inline-item Bolby
+                    .col-md-4
+                        // blog item
+                        .blog-item.rounded.bg-white.shadow-dark.wow.fadeIn
+                            .thumb
+                                a(href='#')
+                                    span.category Tutorial
+                                a(href='#')
+                                    img(src='images/blog/2.svg', alt='blog-title')
+                            .details
+                                h4.my-0.title
+                                    a(href='#') Common Misconceptions About Payment
+                                ul.list-inline.meta.mb-0.mt-2
+                                    li.list-inline-item 07 February, 2020
+                                    li.list-inline-item Bolby
+                    .col-md-4
+                        // blog item
+                        .blog-item.rounded.bg-white.shadow-dark.wow.fadeIn
+                            .thumb
+                                a(href='#')
+                                    span.category Business
+                                a(href='#')
+                                    img(src='images/blog/3.svg', alt='blog-title')
+                            .details
+                                h4.my-0.title
+                                    a(href='#') 3 Things To Know About Startup Business
+                                ul.list-inline.meta.mb-0.mt-2
+                                    li.list-inline-item 06 February, 2020
+                                    li.list-inline-item Bolby
+                .mt-3.text-center
+                    a.btn.btn-default(href='/blog') View Blog
+        // section contact
+        section#contact
+            .container
+                // section title
+                h2.section-title.wow.fadeInUp Get In Touch
+                .spacer(data-height='60')
+                .row
+                    .col-md-4
+                        // contact info
+                        .contact-info
+                            h3.wow.fadeInUp Let's talk about everything!
+                            p.wow.fadeInUp Don't like forms? Send me an 
+                                a(href='mailto:name@example.com') email 
+                                | 👋
+                    .col-md-8
+                        // Contact Form
+                        form#contact-form.contact-form.mt-6(method='post', action='')
+                            .messages
+                            .row
+                                .column.col-md-6
+                                    // Name input
+                                    .form-group
+                                        input#InputName.form-control(type='text', name='InputName', placeholder='Your name', required='required', data-error='Name is required.')
+                                        .help-block.with-errors
+                                .column.col-md-6
+                                    // Email input
+                                    .form-group
+                                        input#InputEmail.form-control(type='email', name='InputEmail', placeholder='Email address', required='required', data-error='Email is required.')
+                                        .help-block.with-errors
+                                .column.col-md-12
+                                    // Email input
+                                    .form-group
+                                        input#InputSubject.form-control(type='text', name='InputSubject', placeholder='Subject', required='required', data-error='Subject is required.')
+                                        .help-block.with-errors
+                                .column.col-md-12
+                                    // Message textarea
+                                    .form-group
+                                        textarea#InputMessage.form-control(name='InputMessage', rows='5', placeholder='Message', required='required', data-error='Message is required.')
+                                        .help-block.with-errors
+                            button#submit.btn.btn-default(type='submit', name='submit', value='Submit') Send Message
+                            // Send Button
+                        // Contact Form end
+        .spacer(data-height='96')
+    // Go to top button
+    a#return-to-top(href='javascript:')
+        i.fas.fa-arrow-up
+    

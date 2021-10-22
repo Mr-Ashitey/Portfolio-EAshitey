@@ -1,0 +1,181 @@
+extends ../layout.pug
+
+block main
+    //include moose css files
+    include ../includes/moose_css.pug
+    //include navBar for moose blog
+    include ../includes/blog_navBar.pug
+    section
+        .container
+            .row.no-gutters.slider-text.align-items-center.justify-content-center
+                .col-md-9.text-center.ftco-animate.pt-5
+                    h1.mb-3.bread My Blog
+                    p.breadcrumbs
+                        span.mr-2
+                            a(href='/')
+                                | Home 
+                                i.fa.fa-chevron-right
+                        span.mr-2
+                            a(href='/blog')
+                                | Blog 
+                                i.fa.fa-chevron-right
+                        span
+                            | Blog Detail 
+                            i.fa.fa-chevron-right
+    section.ftco-section
+        .container-fluid.px-md-4
+            .row.no-gutters
+                .col-md-12.blog-wrap
+                    .row.no-gutters.align-items-center
+                        .col-md-6.img.img-blog.js-fullheight(style='background-image:url(moose/images/ximage_1.jpg.pagespeed.ic.CMXGCCUdn8.jpg)')
+                        .col-md-6
+                            .text.p-md-5.py-5.px-4.ftco-animate
+                                p.meta
+                                    a(href='#')
+                                        span.fa.fa-calendar.mr-2
+                                        | Sept. 27, 2020 
+                                    a(href='#')
+                                        span.fa.fa-user.mr-2
+                                        | Admin 
+                                    a.meta-chat(href='#')
+                                        span.fa.fa-comment.mr-2
+                                        | 3 
+                                h2.mb-4
+                                    a(href='blog-single.html') Turning a digital brand into a real world experience
+                                .icon.d-flex.align-items-center
+                                    .img(style='background-image:url(moose/images/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg)')
+                                    .position.pl-3
+                                        h4.mb-0 Jamie Jonson
+                                        span CEO, Product Designer
+                    .row.justify-content-center.pt-4.py-md-5
+                        .col-md-7
+                            .py-4
+                                p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                                p Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                                p
+                                    strong On her way she met a copy. 
+                                    | The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.
+                            .py-4
+                                h3 How It Works
+                                p Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                                p Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                                p
+                                    strong On her way she met a copy. 
+                                    | The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.
+                            .tag-widget.post-tag-container.mb-5.mt-5
+                                .tagcloud
+                                    a.tag-cloud-link(href='#') Life
+                                    a.tag-cloud-link(href='#') Sport
+                                    a.tag-cloud-link(href='#') Tech
+                                    a.tag-cloud-link(href='#') Work
+                            .comment-post.py-5
+                                h3.mb-5 6 Comments
+                                ul.comment-list
+                                    li.comment
+                                        .vcard.bio
+                                            img(src='moose/images/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg', alt='Image placeholder')
+                                        .comment-body
+                                            h3 John Doe
+                                            .meta September 28, 2020 at 3:03pm
+                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?
+                                            p 
+                                                a.reply(href='#') Reply
+                                    li.comment
+                                        .vcard.bio
+                                            img(src='moose/images/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg', alt='Image placeholder')
+                                        .comment-body
+                                            h3 John Doe
+                                            .meta September 28, 2020 at 3:03pm
+                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?
+                                            p
+                                                a.reply(href='#') Reply
+                                        ul.children
+                                            li.comment
+                                                .vcard.bio
+                                                    img(src='moose/images/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg', alt='Image placeholder')
+                                                .comment-body
+                                                    h3 John Doe
+                                                    .meta September 28, 2020 at 3:03pm
+                                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?
+                                                    p
+                                                        a.reply(href='#') Reply
+                                                ul.children
+                                                    li.comment
+                                                        .vcard.bio
+                                                            img(src='moose/images/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg', alt='Image placeholder')
+                                                        .comment-body
+                                                            h3 John Doe
+                                                            .meta September 28, 2020 at 3:03pm
+                                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?
+                                                            p
+                                                                a.reply(href='#') Reply
+                                    li.comment
+                                        .vcard.bio
+                                            img(src='moose/images/xperson_1.jpg.pagespeed.ic.P4pHl6glbj.jpg', alt='Image placeholder')
+                                        .comment-body
+                                            h3 John Doe
+                                            .meta September 28, 2020 at 3:03pm
+                                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?
+                                            p
+                                                a.reply(href='#') Reply
+                            .comment-form-wrap.pt-5
+                                h3.mb-5 Leave a comment
+                                form.p-5.comment-form(action='#')
+                                    .row
+                                        .col-md-6
+                                            .form-group
+                                                label(for='name') Name *
+                                                input#name.form-control(type='text')
+                                        .col-md-6
+                                            .form-group
+                                                label(for='email') Email *
+                                                input#email.form-control(type='email')
+                                        .col-md-12
+                                            .form-group
+                                                label(for='website') Website
+                                                input#website.form-control(type='url')
+                                        .col-md-12
+                                            .form-group
+                                                label(for='message') Message
+                                                textarea#message.form-control(name='', cols='30', rows='10')
+                                        .col-md-12
+                                            .form-group
+                                                input.btn.py-3.px-4.btn-primary(type='submit', value='Post Comment')
+    include ../includes/moose_footer.pug
+    script(src='moose/js/jquery.min.js')
+    script(src='moose/js/jquery-migrate-3.0.1.min.js%2bpopper.min.js%2bbootstrap.min.js.pagespeed.jc.U78p8H34ng.js')
+    script.
+        eval(mod_pagespeed_bbEt9XEkjy);
+    script.
+        eval(mod_pagespeed_ttrwegP7ZL);
+    script.
+        eval(mod_pagespeed_dkOdosBF4_);
+    script(src='moose/js/jquery.easing.1.3.js%2bjquery.waypoints.min.js%2bjquery.stellar.min.js%2bowl.carousel.min.js.pagespeed.jc.qD8QtIJ2Xe.js')
+    script.
+        eval(mod_pagespeed_JbqErEkNzA);
+    script.
+        eval(mod_pagespeed_hrCK0XETWi);
+    script.
+        eval(mod_pagespeed_zbSqfmeBAp);
+    script.
+        eval(mod_pagespeed_vhLrnV2Szq);
+    script(src='moose/js/jquery.magnific-popup.min.js%2bjquery.animateNumber.min.js%2bscrollax.min.js%2bgoogle-map.js%2bmain.js.pagespeed.jc.YwE2lpoKin.js')
+    script.
+        eval(mod_pagespeed_sL0dc5He5G);
+    script.
+        eval(mod_pagespeed_br5mytq7Hs);
+    script.
+        eval(mod_pagespeed_ZEsMLJdFnw);
+    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false')
+    script.
+        eval(mod_pagespeed_JFnw5wWI97);
+    script.
+        eval(mod_pagespeed_9Pnu0vOTRJ);
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-23581568-13')
+    script.
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-23581568-13');
+    script(defer='', src='https://static.cloudflareinsights.com/beacon.min.js', data-cf-beacon='{"rayId":"6a2216a104bf657d","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}')
+    script(defer='', src='https://static.cloudflareinsights.com/beacon.min.js', data-cf-beacon='{"rayId":"6a2216a0e9ee657d","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.10.0","si":100}')
+    // Mirrored from preview.colorlib.com/theme/moose/blog-single.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 22 Oct 2021 10:37:30 GMT
